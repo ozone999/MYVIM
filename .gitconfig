@@ -1,0 +1,32 @@
+[color]
+ui=auto
+[user]
+name=hjpark
+[user]
+email=hjpark@kaonmedia.com
+[alias]
+st=status -sb
+[alias]
+co=checkout
+[alias]
+ci=commit
+[alias]
+br=branch
+[alias]
+unstage=reset HEAD --
+[alias]
+cs=commit -s
+[alias]
+lg=log --name-status   --color --abbrev-commit --date=relative --graph   --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset   %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'
+[alias]
+tree=log --graph --decorate --pretty=oneline --abbrev-commit --all
+[alias]
+count=shortlog -sn
+[alias]
+cnt=shortlog -sn
+[alias]
+empty-ci=commit --allow-empty
+[alias]
+vimdiff=difftool -y -t vimdiff
+[core]
+editor=vi

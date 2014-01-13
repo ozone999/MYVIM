@@ -1,0 +1,1 @@
+/home/hjpark/vimgit/.vim
