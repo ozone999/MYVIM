@@ -6,7 +6,7 @@ set smartindent
 set ruler
 set ignorecase
 set showmatch
-set hlsearch
+set hls
 syntax on
 map <F9> :wq!<CR> "<F9>
 map <F1> :q!<CR> "<F1>
@@ -17,11 +17,19 @@ nmap <F6> :Tlist<cr>
 nmap <F7> :NERDTree<cr>
 
 set nofoldenable
-set tags+=/home/hjpark/works/tvstorm/vendor/tags
-set tags+=/home/hjpark/works/tvstorm/build/tags
-set tags+=/home/hjpark/works/tvstorm/vendor/tags
-set tags+=/home/hjpark/works/tvstorm/build/tags
-set tags+=/home/hjpark/works/OTA01/vendor/tags
-set tags+=/sdb6/nfsroot/hjpark/gmc6/vendor/marvell/tags
-set tags+=/sdb6/nfsroot/hjpark/gmc6/build/tags
+
+set laststatus=2
+set statusline=%h%F%m%r%=[%l:%c(%p%%)]
+
 set tags+=/home/hjpark/works/T1/tags
+set csprg=/usr/bin/cscope 
+set csto=0 
+set cst 
+set nocsverb 
+if filereadable("./cscope.out")       
+	cs add cscope.out                 
+else                                  
+	cs add /home/hjpark/bin/cscope.out  
+endif     
+
+set csverb
