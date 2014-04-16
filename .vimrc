@@ -1,5 +1,6 @@
 set nu
 set ts=4
+
 hi Search ctermfg=3 ctermbg=0
 set autoindent
 set smartindent
@@ -7,11 +8,18 @@ set ruler
 set ignorecase
 set showmatch
 set hls
+set mouse=a
 syntax on
 map <F9> :wq!<CR> "<F9>
 map <F1> :q!<CR> "<F1>
 nmap <F10> :BufExplorer<cr>
 
+nmap <F4> :!cscope -Rbq
+
+function Cscopereset()
+	:!cscope -Rbq
+	:cs reset
+endfunction
 nmap <F5> :SrcExplToggle<cr>
 nmap <F6> :Tlist<cr>
 nmap <F7> :NERDTree<cr>
