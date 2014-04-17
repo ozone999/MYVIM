@@ -29,7 +29,7 @@ set nofoldenable
 set laststatus=2
 set statusline=%h%F%m%r%=[%l:%c(%p%%)]
 
-set tags+=/home/hjpark/works/T1/tags
+set tags+=/home/hjpark/works/T1/APP/tags
 set csprg=/usr/bin/cscope 
 set csto=0 
 set cst 

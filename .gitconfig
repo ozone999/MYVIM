@@ -3,7 +3,7 @@ ui=auto
 [user]
 name=hjpark
 [user]
-email=hjpark@kaonmedia.com
+email=hjpark@accupix.com
 [alias]
 st=status -sb
 [alias]
@@ -20,6 +20,8 @@ cs=commit -s
 lg=log --name-status   --color --abbrev-commit --date=relative --graph   --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset   %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'
 [alias]
 tree=log --graph --decorate --pretty=oneline --abbrev-commit --all
+[alias]
+treed=log --graph --decorate --pretty=format:'%Cred%h%Creset -%C(cyan)%d%Creset   %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --all
 [alias]
 count=shortlog -sn
 [alias]
