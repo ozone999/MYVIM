@@ -8,7 +8,8 @@ set ruler
 set ignorecase
 set showmatch
 set hls
-set mouse=a
+map <F11> :set mouse=a<CR> "<F11>
+map <F12> :set mouse-=a<CR> "<F12>
 syntax on
 map <F9> :wq!<CR> "<F9>
 map <F1> :q!<CR> "<F1>
@@ -29,7 +30,6 @@ set nofoldenable
 set laststatus=2
 set statusline=%h%F%m%r%=[%l:%c(%p%%)]
 
-set tags+=/home/hjpark/works/T1/APP/tags
 set csprg=/usr/bin/cscope 
 set csto=0 
 set cst 
@@ -37,7 +37,8 @@ set nocsverb
 if filereadable("./cscope.out")       
 	cs add cscope.out                 
 else                                  
-	cs add /home/hjpark/bin/cscope.out  
+	cs add /home/hjpark/bin/cscope.out
+	set tags+=/home/hjpark/bin/tags
 endif     
 
 set csverb
